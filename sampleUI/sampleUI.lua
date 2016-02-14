@@ -84,7 +84,6 @@ function M:newUI( options )
 	local infoButton = display.newImageRect( frontGroup, "sampleUI/infobutton.png", 25, 25 ) ; infoButton.anchorX = 1
 	infoButton.isVisible = false
 	infoButton.id = "infoButton"
-	infoButton.listener = controlInfoBox
 
 	-- Create table for initial object positions
 	local objPos = { infoBoxOffY=0, infoBoxDestY=0 }
@@ -267,6 +266,7 @@ function M:newUI( options )
 		-- Set info button tap listener
 		infoButton.isVisible = true
 		infoButton:addEventListener( "touch", controlInfoBox )
+		infoButton.listener = controlInfoBox
 		screenShade:addEventListener( "touch", controlInfoBox )
 	end
 
