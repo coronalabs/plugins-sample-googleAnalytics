@@ -16,7 +16,7 @@ local function uiEvent( event )
 		if ( event.phase == "ended" ) then
 			-- Log event with Google Analytics
 			print( "Google Analytics event logged: userAction | set" .. tostring(event.target.id) .. " | " .. tostring(event.value) )
-			googleAnalytics.logEvent( "userAction", "set"..tostring(event.target.id), tostring(event.value) )
+			googleAnalytics.logEvent( "userAction", "set"..tostring(event.target.id), nil, tonumber(event.value) )
 		end
 
 	elseif ( event.target.isOn == true or event.target.isOn == false ) then
