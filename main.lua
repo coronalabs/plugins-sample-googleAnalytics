@@ -116,7 +116,7 @@ end
 local scene1Button = widget.newButton(
 	{
 		id = "scene1",
-		label = "scene 1",
+		label = "Scene 1",
 		width = display.actualContentWidth/2,
 		height = 36,
 		font = appFont,
@@ -139,7 +139,7 @@ composer.setVariable( "scene1Button", scene1Button )
 local scene2Button = widget.newButton(
 	{
 		id = "scene2",
-		label = "scene 2",
+		label = "Scene 2",
 		width = display.actualContentWidth/2,
 		height = 36,
 		font = appFont,

@@ -21,13 +21,13 @@ function scene:create( event )
 
 	local sceneGroup = self.view
 
-	local sceneTitle = display.newText( sceneGroup, "scene 1", display.contentCenterX, 115, appFont, 20 )
+	local sceneTitle = display.newText( sceneGroup, "Scene 1", display.contentCenterX, 115, appFont, 20 )
 
 	-- Create test button 1
 	local testButton1 = widget.newButton(
 	{
-		label = "button 1",
 		id = "button1",
+		label = "Button 1",
 		shape = "rectangle",
 		x = display.contentCenterX,
 		y = 175,
@@ -44,8 +44,8 @@ function scene:create( event )
 	-- Create test button 2
 	local testButton2 = widget.newButton(
 	{
-		label = "button 2",
 		id = "button2",
+		label = "Button 2",
 		shape = "rectangle",
 		x = display.contentCenterX,
 		y = 225,
@@ -59,7 +59,7 @@ function scene:create( event )
 	})
 	sceneGroup:insert( testButton2 )
 
-	local radioLabel = display.newText( sceneGroup, "radio button set", display.contentCenterX, 276, appFont, 14 )
+	local radioLabel = display.newText( sceneGroup, "Radio Button Set", display.contentCenterX, 276, appFont, 14 )
 
 	-- Create radio button set
 	local radioGroup = display.newGroup()

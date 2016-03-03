@@ -39,9 +39,9 @@ function scene:create( event )
 
 	local sceneGroup = self.view
 
-	local sceneTitle = display.newText( sceneGroup, "scene 2", display.contentCenterX, 115, appFont, 20 )
+	local sceneTitle = display.newText( sceneGroup, "Scene 2", display.contentCenterX, 115, appFont, 20 )
 
-	local sliderLabel = display.newText( sceneGroup, "sliders", display.contentCenterX, 160, appFont, 14 )
+	local sliderLabel = display.newText( sceneGroup, "Sliders", display.contentCenterX, 160, appFont, 14 )
 
 	-- Create slider 1
 	slider1 = widget.newSlider(
@@ -87,7 +87,7 @@ function scene:create( event )
 	})
 	sceneGroup:insert( slider2 )
 
-	local checkboxLabel = display.newText( sceneGroup, "checkbox set", display.contentCenterX, 276, appFont, 14 )
+	local checkboxLabel = display.newText( sceneGroup, "Checkbox Set", display.contentCenterX, 276, appFont, 14 )
 
 	-- Create checkbox set
 	local checkboxPos = { display.contentCenterX-55, display.contentCenterX, display.contentCenterX+55 }
