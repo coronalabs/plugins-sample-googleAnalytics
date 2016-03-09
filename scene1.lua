@@ -35,8 +35,8 @@ function scene:create( event )
 		height = 32,
 		font = appFont,
 		fontSize = 16,
-		fillColor = { default={ 0.12,0.32,0.52,1 }, over={ 0.12,0.32,0.52,1 } },
-		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,0.8 } },
+		fillColor = { default={ 0.12,0.32,0.52,1 }, over={ 0.132,0.352,0.572,1 } },
+		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = uiEvent
 	})
 	sceneGroup:insert( testButton1 )
@@ -53,8 +53,8 @@ function scene:create( event )
 		height = 32,
 		font = appFont,
 		fontSize = 16,
-		fillColor = { default={ 0.14,0.34,0.54,1 }, over={ 0.14,0.34,0.54,1 } },
-		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,0.8 } },
+		fillColor = { default={ 0.12,0.32,0.52,1 }, over={ 0.132,0.352,0.572,1 } },
+		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = uiEvent
 	})
 	sceneGroup:insert( testButton2 )

@@ -122,8 +122,8 @@ local scene1Button = widget.newButton(
 		font = appFont,
 		fontSize = 16,
 		shape = "rectangle",
-		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.55,0.125,0.125,1 } },
-		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,0.8 } },
+		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.605,0.138,0.138,1 } },
+		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = handleSceneButton,
 	})
 scene1Button.anchorX = 1
@@ -145,8 +145,8 @@ local scene2Button = widget.newButton(
 		font = appFont,
 		fontSize = 16,
 		shape = "rectangle",
-		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.55,0.125,0.125,1 } },
-		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,0.8 } },
+		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.605,0.138,0.138,1 } },
+		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = handleSceneButton
 	})
 scene2Button.anchorX = 0
