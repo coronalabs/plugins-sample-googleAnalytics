@@ -89,10 +89,6 @@ local function handleSceneButton( event )
 		print( 'Google Analytics event logged: "userAction" | "go to scene" | "scene1"' )
 		googleAnalytics.logEvent( "userAction", "go to scene", "scene1" )
 
-		-- Update scene buttons
-		composer.getVariable( "scene2Button" ).alpha = 0.7
-		composer.getVariable( "scene1Button" ).alpha = 1
-
 		-- Go to scene
 		composer.gotoScene( "scene1", { effect="slideRight", time=600 } )
 
@@ -101,10 +97,6 @@ local function handleSceneButton( event )
 		-- Log event with Google Analytics
 		print( 'Google Analytics event logged: "userAction" | "go to scene" | "scene2"' )
 		googleAnalytics.logEvent( "userAction", "go to scene", "scene2" )
-
-		-- Update scene buttons
-		composer.getVariable( "scene1Button" ).alpha = 0.7
-		composer.getVariable( "scene2Button" ).alpha = 1
 
 		-- Go to scene
 		composer.gotoScene( "scene2", { effect="slideLeft", time=600 } )
@@ -122,7 +114,7 @@ local scene1Button = widget.newButton(
 		font = appFont,
 		fontSize = 16,
 		shape = "rectangle",
-		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.605,0.138,0.138,1 } },
+		fillColor = { default={ 0.13,0.34,0.48,1 }, over={ 0.143,0.374,0.528,1 } },
 		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = handleSceneButton,
 	})
@@ -145,7 +137,7 @@ local scene2Button = widget.newButton(
 		font = appFont,
 		fontSize = 16,
 		shape = "rectangle",
-		fillColor = { default={ 0.55,0.125,0.125,1 }, over={ 0.605,0.138,0.138,1 } },
+		fillColor = { default={ 0.13,0.39,0.44,1 }, over={ 0.13,0.429,0.484,1 } },
 		labelColor = { default={ 1,1,1,1 }, over={ 1,1,1,1 } },
 		onRelease = handleSceneButton
 	})
@@ -164,6 +156,6 @@ if ( setupComplete == true ) then
 	scene1Button:setEnabled( true )
 	scene1Button.alpha = 1
 	scene2Button:setEnabled( true )
-	scene2Button.alpha = 0.7
+	scene2Button.alpha = 1
 	composer.gotoScene( "scene1" )
 end
