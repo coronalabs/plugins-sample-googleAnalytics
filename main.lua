@@ -13,6 +13,7 @@ local title = display.newText( "Google Analytics", display.contentCenterX, displ
 
 local logScreenName = widget.newButton( {
     label = "Log Screen Name (Home)",
+    labelColor = { default={ 1, 1, 1 }, over={ 0, 0, 0, 0.5 } },
     id = "logImageShare",
     onRelease = function ( )
         googleAnalytics.logScreenName("Home")
@@ -23,6 +24,7 @@ logScreenName.x, logScreenName.y = display.contentCenterX, display.contentCenter
 
 local logImageShare = widget.newButton( {
     label = "Log Image Share",
+    labelColor = { default={ 1, 1, 1 }, over={ 0, 0, 0, 0.5 } },
     id = "logImageShare",
     onRelease = function ( )
         googleAnalytics.logEvent( "share_image",{ fileType="png", imageNum=49})
@@ -33,6 +35,7 @@ logImageShare.x, logImageShare.y = display.contentCenterX, display.contentCenter
 
 local logButtonPress = widget.newButton( {
     label = "Log Button Press",
+    labelColor = { default={ 1, 1, 1 }, over={ 0, 0, 0, 0.5 } },
     id = "logButtonPress",
     onRelease = function ( )
         googleAnalytics.logEvent( "menu_screen", "button_press", "menu", 10 )
